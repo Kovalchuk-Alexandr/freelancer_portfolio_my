@@ -623,4 +623,36 @@ body {
     line-height: 1;
     margin-bottom: 30px;
   }
+
+
+/* General */
+  
+  .section {
+    padding: 30px 0;
+  }
+
+  .title-1 {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+
+  .title-2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+
+  /* Projects */
+
+  .project__title {
+    font-size: 18px;
+  }
+
+  /* Project page */
+
+  .project-detailes__desc p {
+    margin-bottom: 16px;
+    font-size: 17px;
+  }
+
 }
