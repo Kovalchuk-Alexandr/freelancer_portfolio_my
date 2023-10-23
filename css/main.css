@@ -602,6 +602,28 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  .nav-row  {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 470px) {
+  .nav-row  {
+    column-gap:unset;
+  }
+}
+
+@media (max-width: 435px) {
+  .lang {
+    display: flex;
+    column-gap: 10px;
+    margin: 0 15px;
+  }
+}
+
+
+
 @media (max-width: 452px) {
 
   /* Header */
