@@ -507,7 +507,7 @@ body {
 
 }
 
-@media (max-width:676px) {
+@media (max-width:796px) {
   /* Момент перехода переключателя темы из середины вправо */
   /* Nav */
 
@@ -521,7 +521,7 @@ body {
   
 }
 
-@media (max-width: 620px) {
+@media (max-width: 676px) {
 
   /* Header */
 
