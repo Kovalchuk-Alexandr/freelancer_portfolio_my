@@ -2,8 +2,8 @@ let projectId = localStorage.getItem('projectId');
 
 const item = projects[projectId];
 
-let title = item.title;
-let desc = item.desc;
+let title = item[title][langActiveName.toLowerCase()];
+let desc = item[desc][langActiveName.toLowerCase()];
 let skills = item.skills;
 let img = item.imgBig;
 let site = item.site;

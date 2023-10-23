@@ -167,9 +167,29 @@ body {
   opacity: 0.8;
 }
 
+.lang {
+  display: flex;
+  column-gap: 10px;
+
+  margin-right: 30px;
+}
+
 .lang__item {
   margin: 0 auto;
   color: var(--accent);
+  opacity: 0.8;
+  transition: all 0.2s ease-in;
+}
+
+.lang__item--active {
+  opacity: 1;
+  color: var(--header-text);
+  cursor: auto;
+}
+
+.lang__item:hover {
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 /* Рисуем подчеркивание активного элемента */
@@ -254,7 +274,7 @@ body {
 
 .header__wrapper {
   padding: 0 15px;
-  max-width: 720px;
+  max-width: 780px;
 }
 
 .header__title {
