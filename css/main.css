@@ -495,12 +495,12 @@ body {
   transform: scale(1.08) ;
 }
 
-.img-svg  {
+/* .img-svg  {
   height: 55px;
     width: 62px;
     background-color: #000;
     mask-image: url("./../img/video/video.svg");
-}
+} */
 
 @media screen and (max-width: 640px) {
   .video__icon {
