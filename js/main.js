@@ -173,6 +173,7 @@ function changeLang() {
         let gitRef = item.gitRef;
         let siteTitlePrompt = "";
         let skillsPrompt = "";
+        let demo = item.demo;
 
         switch (langActiveName.toLowerCase()) {
             case "ru":
@@ -193,6 +194,15 @@ function changeLang() {
         // Рисуем заголовок и картинку
         document.querySelector('.project-detailes .title-1').innerHTML = title;
         document.querySelector('.project-detailes__cover').setAttribute('src', `./img/projects/${img}`);
+
+        const video = document.querySelector(".video__link");
+
+        if (demo) {
+            video.classList.add('active');
+            video.setAttribute("href", `${demo}`);
+            const attr = document.createAttribute("data-youtubeLightbox");
+            video.setAttributeNode(attr);
+        }
 
 
         // Выводим описание
