@@ -81,7 +81,7 @@ if (localStorage.getItem('lang') != undefined) {
 }
 
 
-// Инициализация выбора языка при первой закрузке и проверка клика
+// Инициализация выбора языка при первой загрузке и проверка клика
 lang.forEach(el => {
 
     setLang(el);
@@ -137,14 +137,13 @@ function changeLang() {
                 break;
         }
 
-        header.innerHTML =
-            `<h1 class="header__title">
+        header.innerHTML = `<h1 class="header__title">
                 <strong >${greating}<br> <em>${name}</em></strong><br>${aboutme}
             </h1>
             <div class="header__text">
                 <p >${slogan}</p>
             </div>
-            <a href="${resumeURL}" class="btn" target='_blank'>${btnLoad} </a>`
+            <a href="${resumeURL}" class="btn" target='_blank' download>${btnLoad}</a>`;
             // <a href="${resumeURL}" class="btn" download='resume.jpg' target='_blank'>${btnLoad} </a>`
             
         }
@@ -281,21 +280,38 @@ function setProjects() {
     // Если на главной и есть такая необходимость, показываем проекты
     if (projectsAll) {
 
+        let videoIcon = '';
+
+        
         // Очищаем содержиимое всех проектов
         projectsAll.innerHTML = '';
-    
+        
         // Заполняем все проекты из базы (projects.js)
         projects.forEach((item) => {
             // console.log(item.id + " " + item.title + " " + item.img);
             // console.log("-----");
             // projectsAll = document.querySelector('main .projects');
+            
+            // Проверяем, есть ли ссылка на демо-видео youtube
+            if (item.demo) {
+                videoIcon = `<img src="./img/video/movie_camera_icon.svg" alt="Demo available">`;
+            } else videoIcon = '';
     
-            projectsAll.innerHTML += `<li class="project" onclick="projectDetails(${item.id})">
+            // Шаблон карточки проекта
+            let text =
+                `<li class="project" onclick="projectDetails(${item.id})">
                     <a href="./project-page.html">
-                        <img src="./img/projects/${item.img}" alt="Project img" class="project__img">
-                        <h3 class="project__title">${item['title'][langActiveName.toLowerCase()]}</h3>
+                        <img src="./img/projects/${
+                            item.img
+                        }" alt="Project img" class="project__img">
+                        <h3 class="project__title">${
+                            item["title"][langActiveName.toLowerCase()]
+                        }</h3>
+                        <div class="project__icon">${videoIcon}</div>
                     </a>
                 </li`;
+            
+            projectsAll.innerHTML += text;
         });
     }
 
