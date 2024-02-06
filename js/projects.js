@@ -14,7 +14,7 @@ const projects = [
         img: "blog_sm.jpg",
         imgBig: "blog_lg.jpg",
         site: "",
-        siteTitle: "Free Health",
+        siteTitle: "Web Blog",
         gitRef: "https://github.com/Kovalchuk-Alexandr/Blog-MEVN",
         gitTitle: "Web Blog",
         demo: "https://youtu.be/IBJdLZu3WmU",

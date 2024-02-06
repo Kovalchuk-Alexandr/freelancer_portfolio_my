@@ -171,7 +171,7 @@ function changeLang() {
         // const item = projects[itemIndex];
         // console.log(item);
 
-        if (itemIndex) {
+        if (itemIndex != -1) {
             renderProjectDetailes(itemIndex);
         }
     }
