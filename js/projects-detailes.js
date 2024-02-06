@@ -2,6 +2,18 @@ let projectId = localStorage.getItem('projectId');
 
 const item = projects[projectId];
 
+// Находим в 'state' (БД) индекс кликнутого элемента по переданному индексу
+        // const itemIndex = state.items.findIndex(function (element) {
+        const itemIndex = projects.findIndex(function (element) {
+            if (element.id == id) {
+                return true;
+            }
+        }); // [ {i:1}, {i:2}, {i:3}, {i:4},]
+
+        console.log("itemIndex: " + itemIndex);
+
+
+
 let title = item[title][langActiveName.toLowerCase()];
 let desc = item[desc][langActiveName.toLowerCase()];
 let skills = item.skills;

@@ -7,3 +7,7 @@ git remote add origin https://github.com/Kovalchuk-Alexandr/freelancer_portfolio
 git push -u origin master
 
 https://kovalchuk-alexandr.github.io/freelancer_portfolio_my/
+freelancer_portfolio_my
+
+git remote add origin https://github.com/Kovalchuk-Alexandr/freelancer_portfolio_my.git
+git push -u origin master

@@ -157,13 +157,30 @@ function changeLang() {
     // Если на странице 'projectDetailes' - заполняем ее
     const projectDetailes = document.querySelector('.project-detailes');
 
-    if (projectDetailes) { 
-        let projectId = localStorage.getItem('projectId');
+    if (projectDetailes) {
+        let projectId = localStorage.getItem("projectId");
 
-        const item = projects[projectId];
+        // Находим в (БД) индекс кликнутого элемента по переданному индексу
+        const itemIndex = projects.findIndex(function (element) {
+            if (element.id == projectId) {
+                return true;
+            }
+        }); // [ {i:1}, {i:2}, {i:3}, {i:4},]
 
-        let title = item['title'][langActiveName.toLowerCase()];
-        let desc = item['desc'][langActiveName.toLowerCase()];
+        // console.log("itemIndex: " + itemIndex);
+        // const item = projects[itemIndex];
+        // console.log(item);
+
+        if (itemIndex) {
+            renderProjectDetailes(itemIndex);
+        }
+    }
+
+    function renderProjectDetailes(id) {
+        const item = projects[id];
+        
+        let title = item["title"][langActiveName.toLowerCase()];
+        let desc = item["desc"][langActiveName.toLowerCase()];
         let skills = item.skills;
         let img = item.imgBig;
         let site = item.site;
@@ -183,7 +200,7 @@ function changeLang() {
                 siteTitlePrompt = "Website address: ";
                 skillsPrompt = "Skills: ";
                 break;
-        
+
             default:
                 siteTitlePrompt = "Адрес сайта: ";
                 skillsPrompt = "Технологии: ";
@@ -191,46 +208,52 @@ function changeLang() {
         }
 
         // Рисуем заголовок и картинку
-        document.querySelector('.project-detailes .title-1').innerHTML = title;
-        document.querySelector('.project-detailes__cover').setAttribute('src', `./img/projects/${img}`);
+        document.querySelector(".project-detailes .title-1").innerHTML =
+            title;
+        document
+            .querySelector(".project-detailes__cover")
+            .setAttribute("src", `./img/projects/${img}`);
 
         const video = document.querySelector(".video__link");
 
         if (demo) {
-            video.classList.add('active');
+            video.classList.add("active");
             video.setAttribute("href", `${demo}`);
             const attr = document.createAttribute("data-youtubeLightbox");
             video.setAttributeNode(attr);
         }
 
-
         // Выводим описание
         let textEnd = "</div>";
-        let text = 
-            `<div class="project-detailes__desc"><p>${desc}</p>`
-            // `<div class="project-description"><p class="desc"> ${desc}</p>`
+        let text = `<div class="project-detailes__desc"><p>${desc}</p>`;
+        // `<div class="project-description"><p class="desc"> ${desc}</p>`
 
-        if (site != '') {
-            text += `<p class="site-ref">${siteTitlePrompt} <a href=${site} target="_blank">${siteTitle}</a> </p>`
+        if (site != "") {
+            text += `<p class="site-ref">${siteTitlePrompt} <a href=${site} target="_blank">${siteTitle}</a> </p>`;
         }
 
-        if (skills != '') {
-            text += `<p class="skills"><strong><big>${skillsPrompt} </big> ${skills}</strong></p>`
+        if (skills != "") {
+            text += `<p class="skills"><strong><big>${skillsPrompt} </big> ${skills}</strong></p>`;
         }
 
-        if (gitRef != '') {
-            document.querySelector('.btn-outline').setAttribute('href', `${gitRef}`);
-            document.querySelector('.btn-outline').setAttribute('target', "_blank");
+        if (gitRef != "") {
+            document
+                .querySelector(".btn-outline")
+                .setAttribute("href", `${gitRef}`);
+            document
+                .querySelector(".btn-outline")
+                .setAttribute("target", "_blank");
 
-            gitTitle = (siteTitle == 'E-Shop') ? 'Для варианта с хранением Mongo-DB' : gitTitle;
+            gitTitle =
+                siteTitle == "E-Shop"
+                    ? "Для варианта с хранением Mongo-DB"
+                    : gitTitle;
             // text += `<p class="github">Github: <a href=${gitRef} target="_blank">${gitTitle}</a> </p>`
         }
 
         text += textEnd;
-        document.querySelector('.project-detailes__desc').innerHTML = text;
-
+        document.querySelector(".project-detailes__desc").innerHTML = text;
     }
-
     
 }
 
