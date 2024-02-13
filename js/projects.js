@@ -75,8 +75,8 @@ const projects = [
     //     imgBig: "fl_portfolio_lg.jpg",
     //     site: "https://kovalchuk-alexandr.github.io/freelancer_portfolio_my/",
     //     siteTitle: "Freelancer portfolio",
-    //     gitRef: "",
-    //     gitTitle: "",
+    //     gitRef: "https://github.com/Kovalchuk-Alexandr/freelancer_portfolio_my.git",
+    //     gitTitle: "freelancer_portfolio_my",
     // },
     {
         id: 3,
@@ -164,8 +164,8 @@ const projects = [
             en: "Panto Furniture Landing",
         },
         desc: {
-            ru: "Главная страница. Мобильный адаптив. JS интерактив (табы, Swiper-slider). Переменные",
-            en: "Home page. Mobile responsive. JS interactive (tabs, Swiper-slider). Vars",
+            ru: "Главная страница. Мобильный адаптив. Корзина товаров. Подсчет стоимости. JS интерактив (табы, Swiper-slider). Переменные",
+            en: "Home page. Mobile responsive. Shopping cart. Cost calculation. JS interactive (tabs, Swiper-slider). Vars",
         },
 
         skills: "HTML CSS, Flex, JS, Swiper-slider, variables",
