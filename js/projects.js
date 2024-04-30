@@ -20,7 +20,7 @@ const projects = [
         demo: "https://youtu.be/IBJdLZu3WmU",
     },
     {
-        id: 12,
+        id: 1,
         title: {
             ru: "Travel Agent - GULP - mobile, autocomplete, calendar, swiper slider.",
             en: "Travel Agent - GULP - mobile, autocomplete, calendar, swiper slider.",
@@ -40,7 +40,7 @@ const projects = [
         demo: "",
     },
     {
-        id: 11,
+        id: 2,
         title: {
             ru: "Travel X - Swiper Header",
             en: "Travel X - Swiper Header",
@@ -60,7 +60,7 @@ const projects = [
         demo: "",
     },
     {
-        id: 10,
+        id: 3,
         title: {
             ru: "Elegant Store - GULP - mobile",
             en: "Elegant Store - GULP - mobile",
@@ -80,7 +80,7 @@ const projects = [
         demo: "",
     },
     {
-        id: 9,
+        id: 4,
         title: {
             ru: "MNTN-Landing-Page",
             en: "MNTN-Landing-Page",
@@ -100,7 +100,87 @@ const projects = [
         demo: "",
     },
     {
-        id: 1,
+        id: 5,
+        title: {
+            ru: "Panto. Магазин мебели и декора.",
+            en: "Panto Furniture Landing",
+        },
+        desc: {
+            ru: "Главная страница. Мобильный адаптив. Корзина товаров. Подсчет стоимости. JS интерактив (табы, Swiper-slider). Переменные",
+            en: "Home page. Mobile responsive. Shopping cart. Cost calculation. JS interactive (tabs, Swiper-slider). Vars",
+        },
+
+        skills: "HTML CSS, Flex, JS, Swiper-slider, variables",
+        img: "panto_sm.jpg",
+        imgBig: "panto_lg.jpg",
+        site: "https://kovalchuk-alexandr.github.io/Panto-Furniture-Landing/",
+        siteTitle: "Panto",
+        gitRef: "https://github.com/Kovalchuk-Alexandr/Panto-Furniture-Landing.git",
+        gitTitle: "Panto-Furniture-Landing",
+        demo: "https://youtu.be/yTyBtRLhs98",
+    },
+    {
+        id: 6,
+        title: {
+            ru: "Верстка главной страницы туристического сайта",
+            en: "2rism. Free Travel Design.",
+        },
+        desc: {
+            ru: "Главная страница. Мобильный адаптив. JS скрипты (селект, календарь, инпут с подсказками). CSS Grid для мобильной адаптации.",
+            en: "Home page. Mobile responsive. JS scripts (custom: selection, calendar, login with hints). CSS Grid for mobile adaptation.",
+        },
+
+        skills: "HTML CSS, Grid, Flex, JS",
+        img: "2rism_sm.jpg",
+        imgBig: "2rism_lg.jpg",
+        site: "https://kovalchuk-alexandr.github.io/2rism/",
+        siteTitle: "2rism",
+        gitRef: "https://github.com/Kovalchuk-Alexandr/2rism",
+        gitTitle: "2rism",
+        demo: "https://youtu.be/Zx4qEWlw1vU",
+    },
+    {
+        id: 7,
+        title: {
+            ru: "Адаптивная верстка сайта",
+            en: "Alivio. Mobile responsive website layout",
+        },
+        desc: {
+            ru: "Главная страница. Мобильный адаптив. JS скрипты (секция с видео-роликом ).",
+            en: "Home page. Mobile responsive. JS scripts (video section).",
+        },
+
+        skills: "HTML CSS, Flex, JS",
+        img: "alivio_sm.jpg",
+        imgBig: "alivio_lg.jpg",
+        site: "https://kovalchuk-alexandr.github.io/Alivio/",
+        siteTitle: "Alivio",
+        gitRef: "https://github.com/Kovalchuk-Alexandr/Alivio.git",
+        gitTitle: "Alivio",
+        demo: "https://youtu.be/Dpbvqacg7cs",
+    },
+    {
+        id: 8,
+        title: {
+            ru: "Лендинг жилого комплекса LoftHouse.",
+            en: "Loft House residential complex Landing",
+        },
+        desc: {
+            ru: "Главная страница. Мобильный адаптив. JS, Lightbox для Youtube. Google Maps. Переменные",
+            en: "Home page. Mobile responsive. Youtube Lightbox. Google Maps. Vars",
+        },
+
+        skills: "HTML, CSS Grid, Flex, SCSS, JS, variables, Youtube Lightbox. Google Maps",
+        img: "lofthouse_sm.jpg",
+        imgBig: "lofthouse_lg.jpg",
+        site: "https://kovalchuk-alexandr.github.io/LoftHouse/",
+        siteTitle: "Loft House",
+        gitRef: "https://github.com/Kovalchuk-Alexandr/LoftHouse.git",
+        gitTitle: "LoftHouse",
+        demo: "https://youtu.be/JDM_AZv7zqM",
+    },
+    {
+        id: 9,
         title: {
             ru: "Верстка сайта «Free Health»",
             en: "Layout of the website<br>«Free Health»",
@@ -120,7 +200,7 @@ const projects = [
         demo: "https://youtu.be/T1pJeQ6zIZI",
     },
     {
-        id: 2,
+        id: 10,
         title: {
             ru: "Интернет-магазин ",
             en: "Online store",
@@ -159,7 +239,7 @@ const projects = [
     //     gitTitle: "freelancer_portfolio_my",
     // },
     {
-        id: 3,
+        id: 11,
         title: {
             ru: "Портфолио",
             en: "Portfolio ",
@@ -178,7 +258,7 @@ const projects = [
         gitTitle: "",
     },
     {
-        id: 4,
+        id: 12,
         title: {
             ru: "Простой сайт на jQuery ",
             en: "Simple jQuery website",
@@ -196,86 +276,6 @@ const projects = [
         gitRef: "https://github.com/Kovalchuk-Alexandr/jQuery.git",
         gitTitle: "Washoo",
         demo: "https://youtu.be/mLkGyWYoIuY",
-    },
-    {
-        id: 5,
-        title: {
-            ru: "Верстка главной страницы туристического сайта",
-            en: "2rism. Free Travel Design.",
-        },
-        desc: {
-            ru: "Главная страница. Мобильный адаптив. JS скрипты (селект, календарь, инпут с подсказками). CSS Grid для мобильной адаптации.",
-            en: "Home page. Mobile responsive. JS scripts (custom: selection, calendar, login with hints). CSS Grid for mobile adaptation.",
-        },
-
-        skills: "HTML CSS, Grid, Flex, JS",
-        img: "2rism_sm.jpg",
-        imgBig: "2rism_lg.jpg",
-        site: "https://kovalchuk-alexandr.github.io/2rism/",
-        siteTitle: "2rism",
-        gitRef: "https://github.com/Kovalchuk-Alexandr/2rism",
-        gitTitle: "2rism",
-        demo: "https://youtu.be/Zx4qEWlw1vU",
-    },
-    {
-        id: 6,
-        title: {
-            ru: "Адаптивная верстка сайта",
-            en: "Alivio. Mobile responsive website layout",
-        },
-        desc: {
-            ru: "Главная страница. Мобильный адаптив. JS скрипты (секция с видео-роликом ).",
-            en: "Home page. Mobile responsive. JS scripts (video section).",
-        },
-
-        skills: "HTML CSS, Flex, JS",
-        img: "alivio_sm.jpg",
-        imgBig: "alivio_lg.jpg",
-        site: "https://kovalchuk-alexandr.github.io/Alivio/",
-        siteTitle: "Alivio",
-        gitRef: "https://github.com/Kovalchuk-Alexandr/Alivio.git",
-        gitTitle: "Alivio",
-        demo: "https://youtu.be/Dpbvqacg7cs",
-    },
-    {
-        id: 7,
-        title: {
-            ru: "Panto. Магазин мебели и декора.",
-            en: "Panto Furniture Landing",
-        },
-        desc: {
-            ru: "Главная страница. Мобильный адаптив. Корзина товаров. Подсчет стоимости. JS интерактив (табы, Swiper-slider). Переменные",
-            en: "Home page. Mobile responsive. Shopping cart. Cost calculation. JS interactive (tabs, Swiper-slider). Vars",
-        },
-
-        skills: "HTML CSS, Flex, JS, Swiper-slider, variables",
-        img: "panto_sm.jpg",
-        imgBig: "panto_lg.jpg",
-        site: "https://kovalchuk-alexandr.github.io/Panto-Furniture-Landing/",
-        siteTitle: "Panto",
-        gitRef: "https://github.com/Kovalchuk-Alexandr/Panto-Furniture-Landing.git",
-        gitTitle: "Panto-Furniture-Landing",
-        demo: "https://youtu.be/yTyBtRLhs98",
-    },
-    {
-        id: 8,
-        title: {
-            ru: "Лендинг жилого комплекса LoftHouse.",
-            en: "Loft House residential complex Landing",
-        },
-        desc: {
-            ru: "Главная страница. Мобильный адаптив. JS, Lightbox для Youtube. Google Maps. Переменные",
-            en: "Home page. Mobile responsive. Youtube Lightbox. Google Maps. Vars",
-        },
-
-        skills: "HTML, CSS Grid, Flex, SCSS, JS, variables, Youtube Lightbox. Google Maps",
-        img: "lofthouse_sm.jpg",
-        imgBig: "lofthouse_lg.jpg",
-        site: "https://kovalchuk-alexandr.github.io/LoftHouse/",
-        siteTitle: "Loft House",
-        gitRef: "https://github.com/Kovalchuk-Alexandr/LoftHouse.git",
-        gitTitle: "LoftHouse",
-        demo: "https://youtu.be/JDM_AZv7zqM",
     },
 ];
 
