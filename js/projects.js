@@ -82,21 +82,21 @@ const projects = [
     {
         id: 4,
         title: {
-            ru: "MNTN-Landing-Page",
-            en: "MNTN-Landing-Page",
+            ru: "'Modimal' Интернет-магазин - GULP",
+            en: "'Modimal' online store - GULP",
         },
         desc: {
-            ru: "Главная страница туристического сайта. Мобильная навигация. Адаптив. Прилетающие подчеркивания меню. Анимация scroll down & read more",
-            en: "Home page. Mobile responsive. Only HTML CSS. Flying menu underlines. Animation scroll down & read more.",
+            ru: "Cайт интернет магазина. Верстка на Gulp сборке. HTML, SCSS, JS, Swiper slider. Миксины и переменные. Аккордеон. Мобильная навигация/адаптация.",
+            en: "Online store website. Gulp, HTML, SCSS, JS, Swiper slider. Mixins and variables. Accordion. Mobile navigation/adaptation",
         },
 
-        skills: "Only HTML CSS",
-        img: "mntn_sm.jpg",
-        imgBig: "mntn_lg.jpg",
-        site: "https://kovalchuk-alexandr.github.io/MNTN-Landing-Page/",
-        siteTitle: "MNTN",
-        gitRef: "https://github.com/Kovalchuk-Alexandr/MNTN-Landing-Page.git",
-        gitTitle: "MNTN",
+        skills: "GULP, HTML, SCSS, JS, Grid, Flex, Swiper slider, Accordion, Mixins and variables",
+        img: "modimal_sm.jpg",
+        imgBig: "modimal_lg.jpg",
+        site: "https://kovalchuk-alexandr.github.io/Modimal/",
+        siteTitle: "Modimal",
+        gitRef: "https://github.com/Kovalchuk-Alexandr/Modimal.git",
+        gitTitle: "Modimal",
         demo: "",
     },
     {
@@ -182,6 +182,26 @@ const projects = [
     {
         id: 9,
         title: {
+            ru: "MNTN-Landing-Page",
+            en: "MNTN-Landing-Page",
+        },
+        desc: {
+            ru: "Главная страница туристического сайта. Мобильная навигация. Адаптив. Прилетающие подчеркивания меню. Анимация scroll down & read more",
+            en: "Home page. Mobile responsive. Only HTML CSS. Flying menu underlines. Animation scroll down & read more.",
+        },
+
+        skills: "Only HTML CSS",
+        img: "mntn_sm.jpg",
+        imgBig: "mntn_lg.jpg",
+        site: "https://kovalchuk-alexandr.github.io/MNTN-Landing-Page/",
+        siteTitle: "MNTN",
+        gitRef: "https://github.com/Kovalchuk-Alexandr/MNTN-Landing-Page.git",
+        gitTitle: "MNTN",
+        demo: "",
+    },
+    {
+        id: 10,
+        title: {
             ru: "Верстка сайта «Free Health»",
             en: "Layout of the website<br>«Free Health»",
         },
@@ -200,7 +220,7 @@ const projects = [
         demo: "https://youtu.be/T1pJeQ6zIZI",
     },
     {
-        id: 10,
+        id: 11,
         title: {
             ru: "Интернет-магазин ",
             en: "Online store",
@@ -239,7 +259,7 @@ const projects = [
     //     gitTitle: "freelancer_portfolio_my",
     // },
     {
-        id: 11,
+        id: 12,
         title: {
             ru: "Портфолио",
             en: "Portfolio ",
@@ -258,7 +278,7 @@ const projects = [
         gitTitle: "",
     },
     {
-        id: 12,
+        id: 13,
         title: {
             ru: "Простой сайт на jQuery ",
             en: "Simple jQuery website",
