@@ -122,6 +122,66 @@ const projects = [
     {
         id: 6,
         title: {
+            ru: "Lamborghini.",
+            en: "Lamborghini",
+        },
+        desc: {
+            ru: "Адаптивная HTML SCSS верстка лендинга гранд финала гонок Lamborghini.",
+            en: "Adaptive HTML CSS layout for Lamborghini racing grand final landing page.",
+        },
+
+        skills: "HTML CSS, Flex/Grid, JS, Swiper-slider, variables, Google Maps API",
+        img: "lamba_sm.jpg",
+        imgBig: "lamba_lg.jpg",
+        site: "https://kovalchuk-alexandr.github.io/Lamborghini/",
+        siteTitle: "Lamborghini",
+        gitRef: "https://github.com/Kovalchuk-Alexandr/Lamborghini",
+        gitTitle: "Lamborghini",
+        demo: "",
+    },
+    {
+        id: 7,
+        title: {
+            ru: "GoodLyfe - GULP - mobile.",
+            en: "GoodLyfe - GULP - mobile",
+        },
+        desc: {
+            ru: "Cайт интернет магазина. Верстка на Gulp сборке. HTML, SCSS, JS, два Swiper slider. Миксины и переменные. Мобильная навигация/адаптация. Переключение темы. Кнопка 'Back to top'.",
+            en: "Online store website. Gulp, HTML, SCSS, JS, Two Swiper sliders. Mixins and variables. Mobile navigation/adaptation. Thems switching. 'Back to top' button.",
+        },
+
+        skills: "HTML CSS, Flex/Grid, JS, GULP, Swiper-slider, Gallery",
+        img: "goodLyfe_sm.jpg",
+        imgBig: "goodLyfe_lg.jpg",
+        site: "https://kovalchuk-alexandr.github.io/GoodLyfe/",
+        siteTitle: "GoodLyfe",
+        gitRef: "https://github.com/Kovalchuk-Alexandr/GoodLyfe",
+        gitTitle: "GoodLyfe",
+        demo: "",
+    },
+    {
+        id: 8,
+        title: {
+            ru: "BodyShape",
+            en: "BodyShape",
+        },
+        desc: {
+            ru: "Адаптивная HTML SCSS верстка сайта спорт-клуба.",
+            en: "Adaptive HTML CSS layout of a sports club website.",
+        },
+
+        skills: "HTML CSS, Flex/Grid, JS, GULP, SVG-sprite, Mobile/Adaptive",
+        img: "bodyshape_sm.jpg",
+        imgBig: "bodyshape_lg.jpg",
+        site: "https://kovalchuk-alexandr.github.io/BodyShape/",
+        siteTitle: "BodyShape",
+        gitRef: "https://github.com/Kovalchuk-Alexandr/BodyShape",
+        gitTitle: "BodyShape",
+        demo: "",
+    },
+    {
+        id: 9,
+        title: {
             ru: "Верстка главной страницы туристического сайта",
             en: "2rism. Free Travel Design.",
         },
@@ -140,7 +200,7 @@ const projects = [
         demo: "https://youtu.be/Zx4qEWlw1vU",
     },
     {
-        id: 7,
+        id: 10,
         title: {
             ru: "Адаптивная верстка сайта",
             en: "Alivio. Mobile responsive website layout",
@@ -160,7 +220,7 @@ const projects = [
         demo: "https://youtu.be/Dpbvqacg7cs",
     },
     {
-        id: 8,
+        id: 11,
         title: {
             ru: "Лендинг жилого комплекса LoftHouse.",
             en: "Loft House residential complex Landing",
@@ -180,7 +240,7 @@ const projects = [
         demo: "https://youtu.be/JDM_AZv7zqM",
     },
     {
-        id: 9,
+        id: 12,
         title: {
             ru: "MNTN-Landing-Page",
             en: "MNTN-Landing-Page",
@@ -200,7 +260,7 @@ const projects = [
         demo: "",
     },
     {
-        id: 10,
+        id: 13,
         title: {
             ru: "Верстка сайта «Free Health»",
             en: "Layout of the website<br>«Free Health»",
@@ -220,7 +280,7 @@ const projects = [
         demo: "https://youtu.be/T1pJeQ6zIZI",
     },
     {
-        id: 11,
+        id: 14,
         title: {
             ru: "Интернет-магазин ",
             en: "Online store",
@@ -259,7 +319,27 @@ const projects = [
     //     gitTitle: "freelancer_portfolio_my",
     // },
     {
-        id: 12,
+        id: 15,
+        title: {
+            ru: "Dashboard",
+            en: "Dashboard ",
+        },
+        desc: {
+            ru: "Верстка на Gulp сборке. HTML, SCSS, JS, Anime JS, авторская пагинация с валидацией. Мобильная навигация/адаптация по вертикали и горизонтали для 20 устройств.",
+            en: "Gulp, HTML, SCSS, JS, Anime JS, author's pagination with validation. Mobile navigation/adaptability vertically and horizontally for 20 devices, fast forward 40 pages.",
+        },
+
+        skills: "GULP, HTML, SCSS, JS, Anime JS, async functions",
+        img: "dashboard_sm.jpg",
+        imgBig: "dashboard_lg.jpg",
+        site: "https://kovalchuk-alexandr.github.io/Dashboard/",
+        siteTitle: "Dashboard",
+        gitRef: "https://github.com/Kovalchuk-Alexandr/Dashboard",
+        gitTitle: "Dashboard",
+        
+    },
+    {
+        id: 16,
         title: {
             ru: "Портфолио",
             en: "Portfolio ",
@@ -278,7 +358,7 @@ const projects = [
         gitTitle: "",
     },
     {
-        id: 13,
+        id: 17,
         title: {
             ru: "Простой сайт на jQuery ",
             en: "Simple jQuery website",
