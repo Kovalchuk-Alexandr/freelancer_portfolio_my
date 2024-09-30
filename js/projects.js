@@ -151,8 +151,8 @@ const projects = [
         },
 
         skills: "HTML CSS, Flex/Grid, JS, GULP, Swiper-slider, Gallery",
-        img: "goodLyfe_sm.jpg",
-        imgBig: "goodLyfe_lg.jpg",
+        img: "goodlyfe_sm.jpg",
+        imgBig: "goodlyfe_lg.jpg",
         site: "https://kovalchuk-alexandr.github.io/GoodLyfe/",
         siteTitle: "GoodLyfe",
         gitRef: "https://github.com/Kovalchuk-Alexandr/GoodLyfe",
