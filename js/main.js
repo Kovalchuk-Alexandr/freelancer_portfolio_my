@@ -212,7 +212,7 @@ function changeLang() {
             title;
         document
             .querySelector(".project-detailes__cover")
-            .setAttribute("src", `./img/projects/${img}`);
+            .setAttribute("src", `./img/projects/${img}.webp`);
 
         const video = document.querySelector(".video__link");
 
@@ -321,18 +321,35 @@ function setProjects() {
             } else videoIcon = '';
     
             // Шаблон карточки проекта
-            let text =
-                `<li class="project" onclick="projectDetails(${item.id})">
+            let text = `<li class="project" onclick="projectDetails(${
+                item.id
+            })">
                     <a href="./project-page.html">
-                        <img src="./img/projects/${
-                            item.img
-                        }" alt="Project img" class="project__img">
+                        <picture>
+                            <source srcset="./img/projects/${item.img}.webp " type="image/webp">
+                            <source srcset="./img/projects/${item.img}.jpg " type="image/jpeg">
+                            <img src="./img/projects/${
+                                item.img
+                            }.jpg" alt="Project img" class="project__img">
+                        </picture>
                         <h3 class="project__title">${
                             item["title"][langActiveName.toLowerCase()]
                         }</h3>
                         <div class="project__icon">${videoIcon}</div>
                     </a>
                 </li`;
+            // let text =
+            //     `<li class="project" onclick="projectDetails(${item.id})">
+            //         <a href="./project-page.html">
+            //             <img src="./img/projects/${
+            //                 item.img
+            //             }" alt="Project img" class="project__img">
+            //             <h3 class="project__title">${
+            //                 item["title"][langActiveName.toLowerCase()]
+            //             }</h3>
+            //             <div class="project__icon">${videoIcon}</div>
+            //         </a>
+            //     </li`;
             
             projectsAll.innerHTML += text;
         });
