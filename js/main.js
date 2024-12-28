@@ -117,8 +117,11 @@ function changeLang() {
         let slogan = globalTexts['slogan'][langActiveName.toLowerCase()];
         let btnLoad = globalTexts['btn-load'][langActiveName.toLowerCase()];
 
-        let resumeURLru = "https://docs.google.com/document/d/1sh2D9XNrhXUHriTJ5jau8URiod3V5TtO/edit?usp=sharing&ouid=117206839528032799965&rtpof=true&sd=true";
-        let resumeURLen = "https://drive.google.com/file/d/1VnRo2FS2ZyOvGzTiyazgaLFUqtQtw1z9/view?usp=share_link";
+        let resumeURLru =
+            "https://docs.google.com/document/d/1FzAwcvophhSVuI0UmclNiKF93rQxTkB2/edit?usp=drive_link&ouid=117206839528032799965&rtpof=true&sd=true";
+
+        let resumeURLen =
+            "https://drive.google.com/file/d/1jgGv2ob1dJjdbdyreH7NugUhO-YHBnJU/view?usp=sharing";
         
         // let resumeURL = "https://itproger.com/img/courses/1637133308.jpg";
 
